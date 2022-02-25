@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
   private void PlayerMoveKeyboard()
   {
-    movementX = Input.GetAxis("Horizontal");
+    movementX = Input.GetAxisRaw("Horizontal");
     transform.position += new Vector3(movementX, 0, 0) * moveForce * Time.deltaTime;
   }
 }
