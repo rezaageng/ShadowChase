@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
   private Animator anim;
   private string WALK_ANIM = "Walk";
 
-  private void awake()
+  private void Awake()
   {
     rb = GetComponent<Rigidbody2D>();
     sr = GetComponent<SpriteRenderer>();
