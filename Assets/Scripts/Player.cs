@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
   private SpriteRenderer sr;
   private Animator anim;
   private string WALK_ANIM = "Walk";
+  private string JUMP_ANIM = "Jump";
   private bool isGrounded = true;
   private string GROUND_TAG = "Ground";
 
@@ -67,6 +68,7 @@ public class Player : MonoBehaviour
     {
       isGrounded = false;
       rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+      anim.SetBool(JUMP_ANIM, true);
       Debug.Log("Jump");
     }
   }
@@ -76,6 +78,7 @@ public class Player : MonoBehaviour
     if (collision.gameObject.CompareTag(GROUND_TAG))
     {
       isGrounded = true;
+      anim.SetBool(JUMP_ANIM, false);
     }
   }
 }
