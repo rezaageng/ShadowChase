@@ -31,11 +31,30 @@ public class Player : MonoBehaviour
   void Update()
   {
     PlayerMoveKeyboard();
+    AnimatePlayer();
   }
 
   private void PlayerMoveKeyboard()
   {
     movementX = Input.GetAxisRaw("Horizontal");
     transform.position += new Vector3(movementX, 0, 0) * moveForce * Time.deltaTime;
+  }
+
+  private void AnimatePlayer()
+  {
+    if (movementX > 0)
+    {
+      sr.flipX = false;
+      anim.SetBool(WALK_ANIM, true);
+    }
+    else if (movementX < 0)
+    {
+      sr.flipX = true;
+      anim.SetBool(WALK_ANIM, true);
+    }
+    else
+    {
+      anim.SetBool(WALK_ANIM, false);
+    }
   }
 }
