@@ -69,7 +69,6 @@ public class Player : MonoBehaviour
       isGrounded = false;
       rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
       anim.SetBool(JUMP_ANIM, true);
-      Debug.Log("Jump");
     }
   }
 
