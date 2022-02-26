@@ -1358,6 +1358,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &461038396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2903925745202947427, guid: dd898185b47fcf34ab4cb0d4088c2121, type: 3}
+  m_PrefabInstance: {fileID: 2903925745649976927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &461038402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461038396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cbabac6ac7281449612084ecf8710f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
 --- !u!1 &468766165
 GameObject:
   m_ObjectHideFlags: 0
@@ -6613,6 +6631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1180566360735046073, guid: 225830ba4a98e8d4f9135bdcd4dd2462, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1180566360735046078, guid: 225830ba4a98e8d4f9135bdcd4dd2462, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -6676,7 +6698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2903925745202947358, guid: dd898185b47fcf34ab4cb0d4088c2121, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.735
       objectReference: {fileID: 0}
     - target: {fileID: 2903925745202947358, guid: dd898185b47fcf34ab4cb0d4088c2121, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6710,6 +6732,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2903925745202947426, guid: dd898185b47fcf34ab4cb0d4088c2121, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2903925745202947427, guid: dd898185b47fcf34ab4cb0d4088c2121, type: 3}
       propertyPath: m_Name
       value: Enemy 1
@@ -6726,6 +6752,10 @@ PrefabInstance:
     - target: {fileID: 6583514087812717043, guid: e9cf8a2afcaefa1449cf39c95945fff8, type: 3}
       propertyPath: m_Name
       value: Enemy 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583514087812717043, guid: e9cf8a2afcaefa1449cf39c95945fff8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6583514087812717046, guid: e9cf8a2afcaefa1449cf39c95945fff8, type: 3}
       propertyPath: m_RootOrder
