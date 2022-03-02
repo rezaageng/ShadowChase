@@ -79,5 +79,14 @@ public class Player : MonoBehaviour
       isGrounded = true;
       anim.SetBool(JUMP_ANIM, false);
     }
+
+    if (collision.gameObject.CompareTag("Enemy"))
+      Destroy(gameObject);
+  }
+
+  private void OnTriggerEnter2D(Collider2D collision)
+  {
+    if (collision.gameObject.CompareTag("Enemy"))
+      Destroy(gameObject);
   }
 }
