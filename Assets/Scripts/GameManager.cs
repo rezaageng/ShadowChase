@@ -45,6 +45,5 @@ public class GameManager : MonoBehaviour
     {
       Instantiate(players[_charIndex]);
     }
-
   }
 }
