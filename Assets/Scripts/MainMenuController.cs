@@ -8,9 +8,10 @@ public class MainMenuController : MonoBehaviour
 {
   public void PlayGame()
   {
-    int clickedObj = int.Parse(EventSystem.current.currentSelectedGameObject.name);
-    int[] a = new int[10];
-    a[clickedObj] = 10;
+    int selectedCharacter = int.Parse(EventSystem.current.currentSelectedGameObject.name);
+
+    GameManager.instance.CharIndex = selectedCharacter;
+
     // SceneManager.LoadScene("Gameplay");
   }
 }
